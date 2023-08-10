@@ -1,0 +1,62 @@
+<?php
+
+/**
+ * @file
+ * Contiene las implementaciones de hook para Custom User Registration.
+ */
+
+use Drupal\webform\WebformSubmissionInterface;
+use Drupal\user\Entity\User;
+
+/**
+ * Implementa hook_webform_submission_insert().
+ */
+function custom_user_registration_webform_submission_insert(WebformSubmissionInterface $webform_submission) {
+  // Obtén el ID del formulario web.
+  $webform_id = $webform_submission->getWebform()->id();
+  // Comprueba si el ID del formulario web es el que necesitas.
+  if ($webform_id == 'empresas') {
+    // Aquí puedes realizar las acciones que necesites después de que se haya insertado la presentación del formulario.
+    \Drupal::logger('custom_user_registration')->notice('Se ha insertado una nueva presentación para el formulario %form.', ['%form' => $webform_id]);
+    // Por ejemplo, puedes registrar un mensaje en el log de Drupal.
+    $email = $webform_submission->getElementData('correo_electronico_');
+    //\Drupal::logger('custom_user_registration')->notice('El correo electronico es %mail.', ['%mail' => $email]);
+
+    // Obtén el administrador de entidades de Drupal.
+    $entity_manager = \Drupal::entityTypeManager();
+
+    // Realiza una consulta para buscar usuarios por correo electrónico.
+    $users = $entity_manager->getStorage('user')
+      ->loadByProperties(['mail' => $email]);
+
+    // La consulta devuelve un array de usuarios que coinciden con el correo electrónico.
+    // Si el array no está vacío, entonces existe un usuario con ese correo electrónico.
+    if (!empty($users)) {
+    $user = reset($users);
+        //\Drupal::logger('custom_user_registration')->notice('Existe un usuario con el correo electrónico %email.', ['%email' => $email]);
+    } else {
+        //\Drupal::logger('custom_user_registration')->notice('No existe un usuario con el correo electrónico %email.', ['%email' => $email]);
+        // Define los valores para el nuevo usuario.
+        $user_values = [
+          'name' => $email,  // Reemplaza con el nombre de usuario deseado.
+          'mail' => $email,
+          'status' => 1,
+          'init' => $email,
+        ];
+
+        // Crea el nuevo usuario.
+        $new_user = User::create($user_values);
+
+        // Asigna un rol al nuevo usuario.
+        $new_user->addRole('empresa');  // Reemplaza 'nombre_del_rol' con el nombre del rol que deseas asignar.
+
+        // Guarda el nuevo usuario.
+        $new_user->save();
+
+        // Registra un mensaje en el log de Drupal.
+        \Drupal::logger('custom_user_registration')->notice('Se ha creado un nuevo usuario con el correo electrónico %email y se le ha asignado el rol %role.', ['%email' => $email, '%role' => 'nombre_del_rol']);
+
+    }
+
+  }
+}

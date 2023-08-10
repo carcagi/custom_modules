@@ -1,0 +1,9 @@
+<?php
+function prizma_form_view_theme($existing, $type, $theme, $path) {
+  return [
+    'prizma_form_view_form' => [
+      'template' => 'form-view',
+      'variables' => ['form' => NULL],
+    ],
+  ];
+}

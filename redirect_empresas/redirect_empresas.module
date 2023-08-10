@@ -1,0 +1,12 @@
+<?php
+/**
+ * Implements hook_mail().
+ */
+function redirect_empresas_mail($key, &$message, $params) {
+  switch ($key) {
+    case 'user_register':
+      $message['subject'] = t('Bienvenido a nuestro sitio');
+      $message['body'][] = render(Theme::load('user-register.html.twig')->render(['user' => $params['user']]));
+      break;
+  }
+}

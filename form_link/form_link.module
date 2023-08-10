@@ -1,0 +1,20 @@
+<?php
+
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_user_view_alter().
+ */
+function form_link_user_view_alter(&$build, $account) {
+  // Comprueba si el usuario tiene el rol "editor".
+  if (in_array('empresa', $account->getRoles())) {
+    // Si es así, agrega un enlace a "mi-pagina".
+    $url = Url::fromUri('internal:/estado-proceso');
+
+    $build['summary']['estado_del_proceso'] = [
+      '#type' => 'markup',
+      '#markup' => '<br><center><a href="' . $url->toString() . '" style="padding: 20px; font-size: 20px; display: block; margin: 20px; border: 1px solid black; border-radius: 3px; color: black; width: 170px;">Estado del proceso</a></center><br>',
+    ];
+    // $build['summary']['#suffix'] = '<a style="padding: 20px; font-size: 20px; display: block; margin: 20px; border: 1px solid black; border-radius: 3px; color: black; width: 170px;" href="' . $url->toString() . '">Estado del proceso</a>';
+  }
+}

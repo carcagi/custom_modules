@@ -1,0 +1,9 @@
+form-styles:
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    js/prizma_form_view.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax

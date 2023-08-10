@@ -1,0 +1,7 @@
+prizma_form_view.form:
+  path: '/formulario-empresas'
+  defaults:
+    _controller: '\Drupal\prizma_form_view\Controller\PrizmaFormViewController::viewForm'
+    _title: 'Formulario de Empresas'
+  requirements:
+    _permission: 'access content'

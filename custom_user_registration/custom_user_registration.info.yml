@@ -1,0 +1,5 @@
+name: 'Custom User Registration'
+type: module
+description: 'Crea un nuevo usuario y asigna un rol específico cuando se envía el formulario empresas.'
+core_version_requirement: ^10
+package: Custom

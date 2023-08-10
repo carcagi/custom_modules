@@ -1,0 +1,32 @@
+<?php
+
+function imprimirform_theme($existing, $type, $theme, $path) {
+  return [
+    'imprimirform_respuestas' => [
+      'variables' => ['datos' => NULL],
+      'template' => 'imprimirform_respuestas',
+    ],
+    'imprimirform_estado_proceso' => [
+      'variables' => ['datos' => NULL],
+      'template' => 'imprimirform_estado_proceso',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_user_login().
+ */
+function imprimirform_user_login($account) {
+  // Check if the user has the "empresa" role.
+  if (in_array('empresa', $account->getRoles())) {
+    // Get the current request.
+    $request = \Drupal::request();
+    // Get the redirect response.
+    $response = new Symfony\Component\HttpFoundation\RedirectResponse('/estado-proceso');
+    // Save the session.
+    $request->getSession()->save();
+    // Send the response.
+    $response->send();
+    exit;
+  }
+}

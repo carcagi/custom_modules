@@ -1,0 +1,6 @@
+name: Prizma Draft
+type: module
+description: 'Modulo para cambiar el texto del botón "Save Draft" en un formulario web.'
+package: Custom
+version: 1.0
+core_version_requirement: ^10

@@ -1,0 +1,5 @@
+name: Redirect Empresas
+type: module
+description: 'Redirige las presentaciones de formularios de empresas y crea usuarios.'
+package: Custom
+core_version_requirement: ^10

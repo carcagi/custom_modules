@@ -1,0 +1,1003 @@
+<div id="contenido_contrato">
+<style>
+  html {
+    color: #1a1a1a;
+    background-color: #fdfdfd;
+  }
+
+  body {
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
+  }
+
+  @media (max-width: 600px) {
+    body {
+      font-size: 0.9em;
+      padding: 12px;
+    }
+
+    h1 {
+      font-size: 1.8em;
+    }
+  }
+
+  @media print {
+    html {
+      background-color: white;
+    }
+
+    body {
+      background-color: transparent;
+      color: black;
+      font-size: 12pt;
+    }
+
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+
+    h2,
+    h3,
+    h4 {
+      page-break-after: avoid;
+    }
+
+
+    table {
+      page-break-inside: avoid;
+    }
+
+    #contenido_contrato {
+      font-size: 12px;
+    }
+  }
+
+  p {
+    margin: 1em 0;
+  }
+
+  a {
+    color: #1a1a1a;
+  }
+
+  a:visited {
+    color: #1a1a1a;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 1.4em;
+  }
+
+  h5,
+  h6 {
+    font-size: 1em;
+    font-style: italic;
+  }
+
+  h6 {
+    font-weight: normal;
+  }
+
+  ol,
+  ul {
+    padding-left: 1.7em;
+    margin-top: 1em;
+  }
+
+  li>ol,
+  li>ul {
+    margin-top: 0;
+  }
+
+  blockquote {
+    margin: 1em 0 1em 1.7em;
+    padding-left: 1em;
+    border-left: 2px solid #e6e6e6;
+    color: #606060;
+  }
+
+  code {
+    font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+    font-size: 85%;
+    margin: 0;
+    hyphens: manual;
+  }
+
+  pre {
+    margin: 1em 0;
+    overflow: auto;
+  }
+
+  pre code {
+    padding: 0;
+    overflow: visible;
+    overflow-wrap: normal;
+  }
+
+  .sourceCode {
+    background-color: transparent;
+    overflow: visible;
+  }
+
+  hr {
+    background-color: #1a1a1a;
+    border: none;
+    height: 1px;
+    margin: 1em 0;
+  }
+
+  table {
+    margin: 1em 0;
+    border-collapse: collapse;
+    width: 100%;
+    display: block;
+    font-variant-numeric: lining-nums tabular-nums;
+  }
+
+  table caption {
+    margin-bottom: 0.75em;
+  }
+
+  tbody {
+    margin-top: 0.5em;
+    border-top: 1px solid #1a1a1a;
+    border-bottom: 1px solid #1a1a1a;
+  }
+
+  td {
+    border: 1px solid black;
+    padding: 0.125em 0.5em 0.25em 0.5em;
+  }
+
+  header {
+    margin-bottom: 4em;
+    text-align: center;
+  }
+
+  #TOC li {
+    list-style: none;
+  }
+
+  #TOC ul {
+    padding-left: 1.3em;
+  }
+
+  #TOC>ul {
+    padding-left: 0;
+  }
+
+  #TOC a:not(:hover) {
+    text-decoration: none;
+  }
+
+  code {
+    white-space: pre-wrap;
+  }
+
+  span.smallcaps {
+    font-variant: small-caps;
+  }
+
+  div.columns {
+    display: flex;
+    gap: min(4vw, 1.5em);
+  }
+
+  div.column {
+    flex: auto;
+    overflow-x: auto;
+  }
+
+  div.hanging-indent {
+    margin-left: 1.5em;
+    text-indent: -1.5em;
+  }
+
+  /* The extra [class] is a hack that increases specificity enough to
+   override a similar rule in reveal.js */
+  ul.task-list[class] {
+    list-style: none;
+  }
+
+  ul.task-list li input[type="checkbox"] {
+    font-size: inherit;
+    width: 0.8em;
+    margin: 0 0.8em 0.2em -1.6em;
+    vertical-align: middle;
+  }
+
+  .display.math {
+    display: block;
+    text-align: center;
+    margin: 0.5rem auto;
+  }
+</style>
+<h2>FORMULARIO DE VINCULACIÓN PERSONA JURÍDICA</h2>
+    <p>
+      <strong>Tipo de vinculación</strong>: <mark>
+        {{ datos.tipo_de_vinculacion_ }} </mark>
+    </p>
+    <table>
+      <colgroup>
+        <col style="width: 27%" />
+        <col style="width: 32%" />
+        <col style="width: 40%" />
+      </colgroup>
+      <tr>
+        <td>Ciudad: {{ datos.ciudad }}</td>
+        <td>Departamento: {{ datos.departamento }}</td>
+        <td>Fecha de Diligenciamiento: {{ datos.fecha_diligenciamiento }}</td>
+      </tr>
+
+    </table>
+    <p>
+      <strong>INFORMACIÓN GENERAL DE TU EMPRESA O NEGOCIO</strong>
+    </p>
+    <table>
+      <colgroup>
+        <col style="width: 25%" />
+        <col style="width: 0%" />
+        <col style="width: 15%" />
+        <col style="width: 4%" />
+        <col style="width: 0%" />
+        <col style="width: 14%" />
+        <col style="width: 0%" />
+        <col style="width: 16%" />
+        <col style="width: 0%" />
+        <col style="width: 19%" />
+      </colgroup>
+      <tr>
+        <td colspan="2">Tipo de Documento de Identificación: {{ datos.tipo_de_documento_de_identificacion_ }}</td>
+        <td colspan="3">No. de Identificación: {{ datos.no_de_identificacion_ }}</td>
+        <td colspan="3">Razón o Denominación Social: {{ datos.razon_o_denominacion_social }}</td>
+        <td colspan="2">Nombre corto o Sigla: {{ datos.nombre_corto_o_sigla }}</td>
+      </tr>
+      <tr>
+        <td>
+          <p>Fecha de Constitución:</p>
+          <p>{{ datos.fecha_de_constitucion }}</p>
+        </td>
+        <td colspan="3">Dirección: {{ datos.direccion }}</td>
+        <td colspan="2">Ciudad: {{ datos.ciudad }}</td>
+        <td colspan="3">Departamento: {{ datos.departamento }}</td>
+        <td>País: {{ datos.pais }}</td>
+      </tr>
+      <tr>
+        <td colspan="2">Teléfono: {{ datos.telefono[phone] }}</td>
+        <td colspan="5">Correo Electrónico: {{ datos.correo_electronico_ }}</td>
+        <td colspan="3">Página Web: {{ datos.pagina_web }}</td>
+      </tr>
+
+    </table>
+    <p>
+      <strong>SEDES ALTERNAS O SUCURSALES</strong>
+    </p>
+    {% for i in 1..3 %}
+      {% set sede_value = datos['direccion_sede_alterna_' ~ i] %}
+      {% if sede_value is not empty %}
+      <table style="width:100%;">
+        <colgroup>
+          <col style="width: 29%" />
+          <col style="width: 0%" />
+          <col style="width: 39%" />
+          <col style="width: 7%" />
+          <col style="width: 22%" />
+        </colgroup>
+        <tr>
+          <td colspan="2">Dirección: {{ datos['direccion_sede_alterna_' ~ i] }}</td>
+          <td>Ciudad/Municipio: {{ datos['sede_alterna_ciudad_municipio_' ~ i] }}</td>
+          <td colspan="2">Departamento: {{ datos['sede_alterna_departmento_' ~ i] }}</td>
+        </tr>
+        <tr>
+          <td colspan="2">País: {{ datos['sede_alterna_pais_' ~ i] }}</td>
+          <td>Correo Electrónico: {{ datos['sede_alterna_correo_electronico_' ~ i] }}</td>
+          <td colspan="2">Teléfono: {{ datos['sede_alterna_telefono_' ~ i] }}</td>
+        </tr>
+
+      </table>
+      <hr/>
+      {% endif %}
+    {% endfor %}
+
+    <p>
+      <strong>INFORMACIÓN REPRESENTANTE LEGAL:</strong>
+    </p>
+    <table>
+      <colgroup>
+        <col style="width: 28%" />
+        <col style="width: 1%" />
+        <col style="width: 22%" />
+        <col style="width: 0%" />
+        <col style="width: 0%" />
+        <col style="width: 24%" />
+        <col style="width: 0%" />
+        <col style="width: 20%" />
+      </colgroup>
+      <tr>
+        <td colspan="3">Primer Nombre: {{ datos.rep_legal_primer_nombre }}</td>
+        <td colspan="5">Segundo Nombre: {{ datos.rep_legal_segundo_nombre }}</td>
+      </tr>
+      <tr>
+        <td colspan="3">Primer Apellido: {{ datos.rep_legal_primer_apellido }}</td>
+        <td colspan="5">Segundo Apellido: {{ datos.rep_legal_segundo_apellido }}</td>
+      </tr>
+      <tr>
+        <td>Tipo de Documento de Identificación: {{ datos.rep_legal_tipo_de_documento_de_identificacion_ }} </td>
+        <td colspan="3">No. de Identificación: {{ datos.rep_legal_no_de_identificacion }}</td>
+        <td colspan="2"> Fecha de expedición:</p>{{ datos.rep_legal_fecha_de_expedicion_ }}</td>
+        <td colspan="2">Celular: {{ datos.rep_legal_celular }}</td>
+      </tr>
+      <tr>
+        <td colspan="2">Dirección: {{ datos.rep_legal_direccion }}</td>
+        <td colspan="3">Ciudad / Municipio: {{ datos.rep_legal_ciudad_municpio }}</td>
+        <td colspan="2">Departamento: {{ datos.rep_legal_departamento }}</td>
+        <td>País: {{ datos.rep_legal_pais }}</td>
+      </tr>
+      <tr>
+        <td colspan="8">Correo electrónico: {{ datos.rep_legal_correo_electronico }}</td>
+      </tr>
+
+    </table>
+    <hr />
+    <table>
+      <tr>
+        <td>
+          <p>¿Estás obligado a tributar en Estados Unidos?: {{ datos.rep_legal_esta_obligado_a_tributar_en_estados_unidos_ }}</p>
+          <p>No. ID Tributario:{{ datos.rep_legal_no_id_tributario_usa }}</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>¿Estás obligado a tributar en un país diferente a Colombia o Estados Unidos?: {{ datos.rep_legal_tributa_en_un_pais_diferente_a_colombia_o_usa }} </p>
+          <p>No. ID Tributario: {{ datos.rep_legal_no_id_tributario_no_col_no_usa }}</p>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <strong>INFORMACIÓN DE CONTACTO CON LA EMPRESA O NEGOCIO:</strong>
+    </p>
+
+    <table style="width:100%;">
+      <colgroup>
+        <col style="width: 31%" />
+        <col style="width: 0%" />
+        <col style="width: 17%" />
+        <col style="width: 7%" />
+        <col style="width: 0%" />
+        <col style="width: 25%" />
+        <col style="width: 0%" />
+        <col style="width: 15%" />
+      </colgroup>
+      <tr>
+        <td colspan="3">Primer Nombre: {{ datos.contacto_negocio_primer_nombre }}</td>
+        <td colspan="5">Segundo Nombre: {{ datos.contacto_negocio_segundo_nombre }}</td>
+      </tr>
+      <tr>
+        <td colspan="3">Primer Apellido: {{ datos.contacto_negocio_primer_apellido }}</td>
+        <td colspan="5">Segundo Apellido: {{ datos.contacto_negocio_segundo_apellido }}</td>
+      </tr>
+      <tr>
+        <td>Tipo de Documento de Identificación: {{ datos.contacto_negocio_tipo_de_documento_de_identificacion }} </td>
+        <td colspan="3">No. de Identificación: {{ datos.contacto_negocio_no_de_identificacion }}</td>
+        <td colspan="2">
+          <p>Fecha de expedición:</p>
+          <p>{{ datos.contacto_negocio_fecha_de_expedicion }}</p>
+        </td>
+        <td colspan="2">Celular: {{ datos.contacto_negocio_celular }}</td>
+      </tr>
+      <tr>
+        <td colspan="2">Dirección:</td>
+        <td colspan="3">Ciudad / Municipio: {{ datos.contacto_negocio_ciudad_municipio }}</td>
+        <td colspan="2">Departamento: {{ datos.contacto_negocio_departamento }}</td>
+        <td>País: {{ datos.contacto_negocio_pais }}</td>
+      </tr>
+      <tr>
+        <td colspan="8">Correo electrónico: {{ datos.contacto_negocio_correo_electronico }}</td>
+      </tr>
+      <tr>
+        <td colspan="8">Cargo: {{ datos.contacto_negocio_cargo }}</td>
+      </tr>
+
+    </table>
+    <p>
+      <strong>INFORMACIÓN TIPO DE EMPRESA O NEGOCIO:</strong>
+    </p>
+    <table>
+      <colgroup>
+        <col style="width: 29%" />
+        <col style="width: 22%" />
+        <col style="width: 17%" />
+        <col style="width: 30%" />
+      </colgroup>
+      <tr>
+        <td>
+          <p>Tipo de Empresa:</p>
+          <p>
+            {{ datos.info_tipo_tipo_de_empresa }}
+          </p>
+        </td>
+        <td>Código CIIU: {{ datos.info_tipo_codigo_ciiu }}</td>
+        <td>No. de Empleados: {{ datos.info_tipo_no_de_empleados }}</td>
+        <td>Detalle de Actividad Económica Principal: {{ datos.info_tipo_detalle_de_actividad_economica_principal }}</td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <p>¿Está obligada a tributar en Estados Unidos?: {{ datos._esta_obligada_a_tributar_en_estados_unidos_ }}</p>
+          <p>No. ID Tributario: {{ datos.info_tipo_no_id_tributario_usa }}</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <p>¿Está obligada a tributar en un país diferente a Colombia o Estados Unidos?: {{ datos.info_tipo_tributar_en_un_pais_diferente_a_colombia_o_usa }}</p>
+          <p>No. ID Tributario: {{ datos.info_tipo_no_id_tributario_otros }}</p>
+        </td>
+      </tr>
+
+    </table>
+    <hr />
+
+    <p>
+      <strong>ACCIONISTAS</strong>
+    </p>
+
+    {% for i in 1..10 %}
+    {% set accionista_value = datos['accionistas_nombre_completo_' ~ i] %}
+      {% if accionista_value is not empty %}
+
+      <table style="width:100%;">
+        <colgroup>
+          <col style="width: 27%" />
+          <col style="width: 10%" />
+          <col style="width: 19%" />
+          <col style="width: 0%" />
+          <col style="width: 16%" />
+          <col style="width: 5%" />
+          <col style="width: 0%" />
+          <col style="width: 18%" />
+        </colgroup>
+        <tr>
+          <td colspan="8">Nombre Completo: {{ datos['accionistas_nombre_completo_' ~ i] }}</td>
+        </tr>
+        <tr>
+          <td colspan="2">Tipo de Documento de Identificación: {{ datos['accionistast_tipo_de_documento_de_identificacion_' ~ i] }}</td>
+          <td>No. de Identificación:{{ datos['accionistas_no_de_identificacion_' ~ i] }}</td>
+          <td colspan="4">Fecha de Expedición: {{ datos['accionistas_fecha_de_expedicion_' ~ i] }}</td>
+          <td>% de Participación: {{ datos['accionistas_de_participacion_' ~ i] }}</td>
+        </tr>
+        <tr>
+          <td colspan="2">¿Está obligado a tributar en Estados Unidos?: {{ datos['accionistas_estas_obligado_a_tributar_en_estados_unidos_' ~ i] }} </td>
+          <td colspan="6">TIN (No. de ID Tributario): {{ datos['accionistas_tin_no_de_id_tributario_usa_' ~ i] }}</td>
+        </tr>
+        <tr>
+          <td colspan="5">
+            <p>¿Estás obligado a tributar fuera de Colombia o Estados Unidos?: {{ datos['accionistas_tributar_fuera_de_colombia_o_estados_unidos_' ~ i] }}</p>
+            <p>País:</p>
+          </td>
+          <td colspan="3">TIN (No. de ID Tributario): {{ datos['accionistas_tin_no_de_id_tributario_otros_' ~ i] }}</td>
+        </tr>
+        <tr>
+          <td colspan="8">¿Eres una Persona Políticamente Expuesta (PEP) Nacional?:{{ datos['accionistas_una_persona_politicamente_expuesta_pep_1_nacional_' ~ i] }}</td>
+        </tr>
+        <tr>
+          <td colspan="8">
+            ¿Alguno de los socios tiene vínculos con Personas Políticamente Expuestas?: {{ datos['accionistas_socios_tiene_vinculos_con_personas_politicamente_' ~ i] }}</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="8">¿Eres una Persona Expuesta Políticamente Extranjera? {{ datos['accionistas_persona_expuesta_politicamente_extranjera_' ~ i] }} </td>
+        </tr>
+        <tr>
+          <td>Organización: {{ datos['accionistas_extranjera_organizacion_' ~ i] }}</td>
+          <td colspan="3">Cargo que ocupa: {{ datos['accionistas_extranjera_cargo_que_ocupa_' ~ i] }}</td>
+          <td colspan="2">País: {{ datos['accionistas_extranjera_pais_' ~ i] }}</td>
+          <td colspan="2">Ciudad: {{ datos['accionistas_extranjera_ciudad_' ~ i] }}</td>
+        </tr>
+        <tr>
+          <td colspan="8">¿Eres una Persona Expuesta Políticamente de Organizaciones Internacionales?: {{ datos['accionistas_persona_expuesta_org_internacional_' ~ i] }} </td>
+        </tr>
+        <tr>
+          <td>Organización: {{ datos['accionistas_org_internacional_organizacion_' ~ i] }}</td>
+          <td colspan="3">Cargo que ocupa: {{ datos['accionistas_org_internacional_cargo_que_ocupa_' ~ i] }}</td>
+          <td colspan="2">País: {{ datos['accionistas_org_internacional_pais_' ~ i] }}</td>
+          <td colspan="2">Ciudad: {{ datos['accionistas_org_internacional_ciudad_' ~ i] }}</td>
+        </tr>
+
+      </table>
+
+      <hr>
+
+      {% endif %}
+    {% endfor %}
+
+
+
+    <p>
+      <strong>MIEMBROS DE JUNTA DIRECTIVA</strong>
+    </p>
+    <p>
+      <em>(Identificación de los miembros de Junta Directiva u órgano que haga sus veces)</em>
+    </p>
+
+    {% for i in 1..10 %}
+      {% if datos['junta_primer_nombre_' ~ i] is not empty %}
+      <table>
+        <colgroup>
+          <col style="width: 29%" />
+          <col style="width: 16%" />
+          <col style="width: 0%" />
+          <col style="width: 10%" />
+          <col style="width: 0%" />
+          <col style="width: 6%" />
+          <col style="width: 0%" />
+          <col style="width: 7%" />
+          <col style="width: 7%" />
+          <col style="width: 19%" />
+        </colgroup>
+        <tr>
+          <td colspan="3">Primer Nombre: {{ datos['junta_primer_nombre_' ~ i] }}</td>
+          <td colspan="7">Segundo Nombre: {{ datos['junta_segundo_nombre_' ~ i] }}</td>
+        </tr>
+        <tr>
+          <td colspan="3">Primer Apellido: {{ datos['junta_primer_apellido_' ~ i] }}</td>
+          <td colspan="7">Segundo Apellido: {{ datos['junta_segundo_apellido_' ~ i] }}</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            Tipo de Documento de Identificación: {{ datos['junta_tipo_de_documento_de_identificacion_' ~ i] }}
+          </td>
+          <td colspan="6">No. de Identificación: {{ datos['junta_no_de_identificacion_' ~ i] }}</td>
+          <td colspan="2">Fecha de Expedición:{{ datos['junta_fecha_de_expedicion_' ~ i] }}</td>
+        </tr>
+        <tr>
+          <td colspan="10">Calidad de Miembro de Junta Directiva: {{ datos['junta_calidad_de_miembro_' ~ i] }} </td>
+        </tr>
+        <tr>
+          <td colspan="10">¿Eres una Persona Políticamente Expuesta (PEP) Nacional?: {{ datos['junta_una_persona_politicamente_expuesta_pep_1_nacional_' ~ i] }} </td>
+        </tr>
+        <tr>
+          <td colspan="10">¿Tienes vínculos con Personas Políticamente Expuestas (PEP)?: {{ datos['junta_vinculos_expuestas_pep_1_nacional_' ~ i] }}
+            </em>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="10">¿Eres una Persona Expuesta Políticamente Extranjera? : {{ datos['junta_persona_expuesta_politicamente_extranjera_' ~ i] }} </td>
+        </tr>
+        <tr>
+          <td>Organización: {{ datos['junta_extranjera_organizacion_' ~ i] }}</td>
+          <td colspan="3">Cargo que ocupas: {{ datos['junta_extranjera_cargo_que_ocupa_' ~ i] }}</td>
+          <td colspan="5">País: {{ datos['junta_extranjera_pais_' ~ i] }}</td>
+          <td>Ciudad: {{ datos['junta_extranjera_ciudad_' ~ i] }}</td>
+        </tr>
+        <tr>
+          <td colspan="10">¿Eres una Persona Expuesta Políticamente de Organizaciones Internacionales?: {{ datos['junta_persona_expuesta_org_internacional_' ~ i] }} </td>
+        </tr>
+        <tr>
+          <td>Organización: {{ datos['junta_org_internacional_organizacion_' ~ i] }}</td>
+          <td colspan="3">Cargo que ocupa: {{ datos['junta_org_internacional_cargo_que_ocupa_' ~ i] }}</td>
+          <td colspan="5">País: {{ datos['junta_org_internacional_pais_' ~ i] }}</td>
+          <td>Ciudad: {{ datos['junta_org_internacional_ciudad_' ~ i] }}</td>
+        </tr>
+
+      </table>
+      <hr />
+      {% endif %}
+    {% endfor %}
+
+
+
+
+    <strong>DESCRIPCIÓN DE PRODUCTOS FINANCIEROS Y OPERACIONES EN MONEDA EXTRANJERA</strong>
+    </p>
+    <table>
+      <colgroup>
+        <col style="width: 12%" />
+        <col style="width: 10%" />
+        <col style="width: 3%" />
+        <col style="width: 14%" />
+        <col style="width: 14%" />
+        <col style="width: 14%" />
+        <col style="width: 6%" />
+        <col style="width: 8%" />
+        <col style="width: 13%" />
+      </colgroup>
+      <tr>
+        <td colspan="2">
+          <p>¿Realizas operaciones en moneda extranjera</p>
+          <p>
+            <strong>O</strong> SI <strong>O</strong> NO
+          </p>
+        </td>
+        <td colspan="5">Tipo de Operación: <strong>O</strong> Importaciones <strong>O</strong> Exportaciones <strong>O</strong> Préstamos Inversiones <strong>O</strong> Pago de servicios <strong>O</strong> Otros, ¿Cuáles? </td>
+        <td colspan="2">
+          <p>¿Tienes Productos en Moneda Extranjera?</p>
+          <p>
+            <strong>O</strong> SI <strong>O</strong> NO
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Tipo de Producto</strong>
+        </td>
+        <td colspan="2">
+          <strong>ID Producto</strong>
+        </td>
+        <td>
+          <strong>Entidad</strong>
+        </td>
+        <td>
+          <strong>Monto</strong>
+        </td>
+        <td>
+          <strong>Ciudad</strong>
+        </td>
+        <td colspan="2">
+          <strong>País</strong>
+        </td>
+        <td>
+          <strong>Moneda</strong>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="2"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td colspan="2"></td>
+        <td></td>
+      </tr>
+
+
+    </table>
+    <p>
+      <strong>DECLARACIONES Y AUTORIZACIONES</strong>
+    </p>
+    <p>
+      <em>“Somos una entidad vigilada por la Superintendencia Financiera de Colombia, constituida como Sociedad Especializada en Depósitos y Pagos Electrónicos (SEDPE), quienes ofrecemos productos y/o servicios de naturaleza financiera y en virtud de ello, a continuación solicitaremos algunas autorizaciones e información personal que resulta necesaria y/o deseable para conocerlo mejor y poder ofrecerle nuestros productos, así como, prestarle nuestros servicios”</em>
+    </p>
+    <p>
+      <strong>DECLARACIÓN DE ORIGEN DE FONDOS</strong>
+    </p>
+    <table>
+      <colgroup>
+        <col style="width: 100%" />
+      </colgroup>
+      <tr>
+        <td>
+          <p>En representación de la empresa en mención, de manera voluntaria y dando certeza de que todo lo aquí consignado es cierto, realizo la siguiente declaración sobre el origen de los recursos entregados a Pagos GDE S.A. - POWWI, con el propósito de que se pueda dar cumplimiento a lo señalado al respecto en la Circular Externa 29 de 2014 (Circular Básica Jurídica) expedida por la Superintendencia Financiera de Colombia, el Estatuto Orgánico del Sistema Financiero (Decreto 663 de 1993), la Ley 190 de 1995 (Estatuto Anticorrupción), y demás normas complementarias, así como aquellas posteriores que las aclaren, modifiquen, adicionen o sustituyan <strong>.</strong>
+          </p>
+          <p>
+            <strong>El origen de fondos y bienes de la empresa que represento provienen de:</strong> ______________________________, Adicionalmente, declaro expresa y voluntariamente que: (i) Los recursos provienen de la actividad económica establecida en el objeto social de la empresa y no son producto de actividades ilícitas contempladas en el Código Penal Colombiano, tales como el lavado de activos o sus delitos fuente, financiación del terrorismo ni financiamiento de la proliferación de armas de destrucción masiva, (ii) conozco y acepto que en caso de que la empresa a la que represento llegase a ser objeto de investigación judicial y/o actuación administrativa por parte de autoridades nacionales y/o internacionales, Pagos GDE S.A. podrá, unilateral y discrecionalmente, dar por terminado los contratos que dieron origen a esta declaración, (iii) declaro que mi nombre e identificación no está incluido en la Oficina de Control de Activos en el Exterior (OFAC), o en cualquier otra lista de similar naturaleza, de carácter nacional y/o internacional de manera directa o indirecta, (iv) durante la vigencia de los contratos que dan origen a esta declaración, no se incurrirá o tolerará conductas que, por su naturaleza, atenten contra la buena fe contractual, comercial y/o contra el orden público y en caso de que posteriormente desarrolle cualquier actividad comercial y/o profesional que conlleve ingresos adicionales, lo comunicaré de manera inmediata a Pagos GDE S.A. - POWWI, (v) como representante no admitiré y me cercioraré que terceros no efectúen o dispongan en los productos de la empresa que represento, recursos provenientes del lavado de activos o sus delitos fuentes y/o de actividades ilegales, no se efectuarán transacciones destinadas a tales actividades y/o en favor de personas relacionadas con asuntos de esa naturaleza.
+          </p>
+          <p>"Entiendo y acepto que si se incumple lo anteriormente descrito, o se suministre información errónea, falsa e inexacta en este documento, esto podría acarrear la invalidez de la vinculación, en los términos de la normatividad vigente”.</p>
+        </td>
+      </tr>
+
+    </table>
+    <hr>
+    </p>
+    <p>
+      <strong>AUTORIZACIÓN PARA EL TRATAMIENTO DE USO DE DATOS</strong>
+    </p>
+    <table>
+      <colgroup>
+        <col style="width: 100%" />
+      </colgroup>
+      <tr>
+        <td>
+          <p>Autorizo de manera voluntaria, previa y expresa a Pagos GDE S.A. o a quien represente sus derechos, para el tratamiento de los datos personales suministrados para el desarrollo de la relación contractual correspondiente al producto, así como para (i) el envío por cualquier medio (correo electrónico, teléfono, celular, SMS, redes sociales, WhatsApp o medios similares) de información comercial y ejecución de campañas de promocionales o de fidelización, (ii) el desarrollo de estudios estadísticos o herramientas de prevención de fraude, (iii) medir los niveles de satisfacción y de comportamiento, (iv) consultar con terceros, verificar y actualizar los datos que he proporcionado, (v) efectuar transferencia de datos a nivel internacional, de conformidad a lo preceptuado en el artículo 26 de la Ley 1581 de 2012, así como, realizar la transmisión de datos a nivel internacional, y las demás finalidades consagradas en la Política de Tratamiento de Datos Personales de Powwi la cual se encuentra disponible para consulta en www.powwi.co.</p>
+          <p>Asimismo, autorizo de manera voluntaria, previa y expresa a Pagos GDE S.A. o a quien represente sus derechos para que con fines estadísticos, de control, supervisión, de conocimiento de mi comportamiento financiero y transaccional reporte a las centrales de información financiera y crediticia que operan en Colombia, el nacimiento, modificación, extinción y en general el comportamiento transaccional del producto. A su vez, autorizo a Pagos GDE S.A. a consultar la información en las centrales de información, así como de obtener las referencias comerciales necesarias que le permitan tener un conocimiento adecuado sobre el comportamiento y desarrollo de las relaciones financieras, comerciales o de servicios adquiridos.</p>
+          <p>En virtud de las disposiciones consagradas en la Ley 1581 de 2012, declaro que conozco el derecho que ostento y que puedo ejercer en cualquier tiempo a, conocer, actualizar, rectificar o solicitar prueba y revocación de la autorización por mí otorgada, o la supresión y/o eliminación de los datos entregados a través de los medios, procedimientos y canales establecidos en la Política de Tratamiento de Datos la cual se encuentra disponible en la página web www.powwi.co, en el link ubicado en la parte inferior denominada Política de Tratamiento de Datos. Estos derechos, los podré ejercer a través de los canales o medios dispuestos por Pagos GDE S.A. para la atención al cliente, correo electrónico, escribenos@powwi.co, contact center: 60 (1) 403 05 55.</p>
+          <p>Finalmente, declaro que conozco que ostento la facultad de responder o no a las preguntas que versen sobre datos sensibles o sobre datos de niñas, niños y adolescentes.</p>
+        </td>
+      </tr>
+
+    </table>
+    <table>
+      <colgroup>
+        <col style="width: 100%" />
+      </colgroup>
+      <tr>
+        <td>
+          <strong>O</strong> Autorizo a Pagos GDE S.A. el tratamiento de los datos personales suministrados, incluidos aquellos de carácter sensible, conforme a lo establecido en este documento y de acuerdo a la Política de Tratamiento de Datos que me fue dada a conocer previamente a través de la página web www.powwi.co.
+        </td>
+      </tr>
+
+    </table>
+    <hr>
+    </p>
+    <table>
+      <colgroup>
+        <col style="width: 100%" />
+      </colgroup>
+      <tr>
+        <td>
+          <strong>O</strong> Autorizo a Pagos GDE S.A. para que consulte y reporte ante centrales de información financiera y crediticia que operan en Colombia conforme a lo establecido en este documento y de acuerdo con la Política de Tratamiento de Datos que me fue dada a conocer previamente a través de la página web www.powwi.co.
+        </td>
+      </tr>
+
+    </table>
+    <table>
+      <colgroup>
+        <col style="width: 100%" />
+      </colgroup>
+      <tr>
+        <td>
+          <strong>O</strong> Autorizo a Pagos GDE S.A. para que utilicen los datos que he incluido en el presente formulario y/o suministrado al hacer uso de los productos y/o servicios contratados y/o a través de los canales de atención presenciales y no presenciales, con el fin de que compartan mi información con aliados comerciales y estratégicos, a efecto de realizar el ofrecimiento y desarrollo de ofertas de valor.
+        </td>
+      </tr>
+
+    </table>
+    <table style="width:100%;">
+      <colgroup>
+        <col style="width: 57%" />
+        <col style="width: 0%" />
+        <col style="width: 0%" />
+        <col style="width: 0%" />
+        <col style="width: 0%" />
+        <col style="width: 0%" />
+        <col style="width: 0%" />
+        <col style="width: 0%" />
+        <col style="width: 10%" />
+        <col style="width: 3%" />
+        <col style="width: 21%" />
+      </colgroup>
+      <tr>
+        <td colspan="9" rowspan="10">
+          <p>
+            <em>En constancia de haber leído, entendido y aceptado lo anterior, firmo el presente formulario.</em>
+          </p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>____________________________________</p>
+          <p>Firma</p>
+          <p>Tipo y N° de Identificación:</p>
+        </td>
+        <td colspan="2" rowspan="10">
+        	 <p>&nbsp;</p>
+   	         <p>&nbsp;</p>
+     	     <p>&nbsp;</p>
+       	     <p>&nbsp;</p>
+       	     <p>&nbsp;</p>
+       	     <p>&nbsp;</p>
+          <em>Huella Dactilar:</em>
+        </td>
+      </tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+
+    </table>
+    <div style="display:none;">
+      <p>
+        <em>
+          <mark>En caso de firmar electrónicamente:</mark>
+        </em>
+      </p>
+      <table>
+        <colgroup>
+          <col style="width: 100%" />
+        </colgroup>
+        <tr>
+          <td>
+            <em>
+              <mark>
+                <strong>O</strong>
+              </mark> De conformidad con las disposiciones establecidas por la Ley 527 de 1999 y las del Decreto 2364 de 2012, convengo y acepto que el presente documento podrá ser suscrito a través de mensajes de datos, usando para efectos de expresar mi consentimiento una firma electrónica avanzada o una firma electrónica confiable que se encuentre en vigor. </em>
+          </td>
+        </tr>
+
+      </table>
+    </div>
+    <hr>
+    </p>
+    <p>
+      <strong>CONOCIMIENTO MEJORADO DE PERSONAS POLÍTICAMENTE EXPUESTAS</strong>
+    </p>
+    <p>En cumplimiento del Decreto 830 de 2021, se relacionan los siguientes campos en caso de ser considerado como persona políticamente expuesto o vinculado</p>
+    <table>
+      <colgroup>
+        <col style="width: 8%" />
+        <col style="width: 14%" />
+        <col style="width: 7%" />
+        <col style="width: 10%" />
+        <col style="width: 12%" />
+        <col style="width: 12%" />
+        <col style="width: 11%" />
+        <col style="width: 10%" />
+        <col style="width: 11%" />
+      </colgroup>
+      <tr>
+        <td>Vínculo/ Relación</td>
+        <td>Nombre PEP</td>
+        <td>Tipo de ID</td>
+        <td>Nº. de Identificación</td>
+        <td>Nacionalidad</td>
+        <td>Entidad donde labora</td>
+        <td>Cargo que Ocupa</td>
+        <td>Fecha Vinculación</td>
+        <td>Fecha Desvinculación</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+
+    </table>
+    <p>Por favor diligencia esta información únicamente en caso de que poseas un Derecho o poder de firma o de otra índole sobre cuentas financieras en algún país extranjero <sup>4</sup>: </p>
+    <table style="width:100%;">
+      <colgroup>
+        <col style="width: 12%" />
+        <col style="width: 10%" />
+        <col style="width: 3%" />
+        <col style="width: 14%" />
+        <col style="width: 14%" />
+        <col style="width: 14%" />
+        <col style="width: 6%" />
+        <col style="width: 8%" />
+        <col style="width: 14%" />
+      </colgroup>
+      <tr>
+        <td>Tipo de Producto</td>
+        <td colspan="2">ID Producto</td>
+        <td>Entidad</td>
+        <td>Monto</td>
+        <td>Ciudad</td>
+        <td colspan="2">País</td>
+        <td>Moneda</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="2"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td colspan="2"></td>
+        <td></td>
+      </tr>
+
+
+    </table>
+    <p>Por favor diligencia los nombres e identificación de las personas jurídicas o naturales (patrimonios autónomos o fiducias):</p>
+    <hr>
+    </p>
+    <table>
+      <colgroup>
+        <col style="width: 11%" />
+        <col style="width: 12%" />
+        <col style="width: 9%" />
+        <col style="width: 6%" />
+        <col style="width: 3%" />
+        <col style="width: 11%" />
+        <col style="width: 12%" />
+        <col style="width: 11%" />
+        <col style="width: 3%" />
+        <col style="width: 7%" />
+        <col style="width: 10%" />
+      </colgroup>
+      <tr>
+        <td>Nombre</td>
+        <td>Identificación</td>
+        <td>Tipo de Producto</td>
+        <td colspan="2">ID Producto</td>
+        <td>Entidad</td>
+        <td>Monto</td>
+        <td>Ciudad</td>
+        <td colspan="2">País</td>
+        <td>Moneda</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td colspan="2"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td colspan="2"></td>
+        <td></td>
+      </tr>
+
+
+    </table>
+    <ol type="1">
+      <li>
+        <blockquote>
+          <p>
+            <strong>PEP - Persona Expuesta Políticamente:</strong> Se considerarán como Personas Expuestas Políticamente (PEP) los servidores públicos de cualquier sistema de nomenclatura y clasificación de empleos de la administración pública nacional y territorial, cuando tengan asignadas o delegadas funciones de: expedición de normas o regulaciones, dirección general, formulación de políticas institucionales y adopción de planes, programas y proyectos, manejo directo de bienes, dineros o valores del Estado, administración de justicia o facultades administrativas sancionatorias, y los particulares que tengan a su cargo la dirección o manejo de recursos en los movimientos o partidos políticos <mark>.</mark>
+          </p>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote>
+          <p>
+            <strong>Persona Políticamente Extranjera</strong>: Son aquellas personas que desempeñan funciones prominentes en otro país. Se entienden por PEP Extranjeros: (I) Jefes de Estado, Jefes de Gobierno, Ministros, subsecretarios o secretarios de Estado; (II) Congresistas o Parlamentarios; (III) Miembros de tribunales supremos, Tribunales constitucionales u otras altas instancias judiciales cuyas decisiones no admitan normalmente recursos, salvo en circunstancias excepcionales (IV) Miembros de Tribunales o de las juntas Directivas de bancos centrales; (V) Embajadores, encargados de negocios y altos funcionarios de las Fuerzas Armadas, (VI) Miembros de los órganos administrativos de gestión o de supervisión de empresas de propiedad Estatal. (VI) representantes legales, directores, subdirectores y/o miembros de las juntas directivas de organizaciones internacionales.
+          </p>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote>
+          <p>
+            <strong>Vínculo/Relación:</strong> 1 <strong>.</strong> Segundo grado de consanguinidad (abuelos, padres, hermanos, hijos, nietos) 2. Primero de afinidad (yerno, nueras, suegros, cuñados, abuelos del cónyuge o compañero(a) permanente del PEP) 3. Primero civil (hijo adoptado o padres adoptantes).
+          </p>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote>
+          <p>
+            <strong>Derecho o poder de firma o de otra índole sobre alguna cuentas financieras en algún país extranjero y patrimonios autónomos o fiducias:</strong> ARTÍCULO 2.1.4.2.4. Obligación de las Personas Expuestas Políticamente y de las entidades.
+          </p>
+        </blockquote>
+      </li>
+    </ol>
+    <table>
+      <colgroup>
+        <col style="width: 100%" />
+      </colgroup>
+      <tr>
+        <td style="height:300px">
+          <strong>KAM (KEY ACCOUNT MANAGER) a cargo:</strong> ____________________________________
+        </td>
+      </tr>
+
+    </table>
+    </p>
+  </div>
+    <button type="button" id="imprimir_contrato" value="Imprimir!">Imprimir</button>
+<hr>
+<p><a href="/user/logout">Cerrar Sesion</a></p>
+<script>
+  function imprimirDiv() {
+    var printContents = document.getElementById("contenido_contrato").innerHTML;
+    var originalContents = document.body.innerHTML;
+
+    document.body.innerHTML = printContents;
+
+    window.print();
+
+    document.body.innerHTML = originalContents;
+}
+
+document.getElementById("imprimir_contrato").addEventListener("click", function() {
+    imprimirDiv();
+});
+
+</script>

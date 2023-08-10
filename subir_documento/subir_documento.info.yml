@@ -1,0 +1,9 @@
+name: 'Subir Documento'
+type: module
+description: 'Módulo para subir documentos firmados.'
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - drupal:webform
+version: '1.0'
+project: 'subir_documento'

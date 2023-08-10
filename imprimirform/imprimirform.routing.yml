@@ -1,0 +1,15 @@
+imprimirform.respuestas:
+  path: '/respuestas/{respuesta_id}'
+  defaults:
+    _controller: '\Drupal\imprimirform\Controller\RespuestasController::content'
+    _title: 'Respuestas del Webform'
+  requirements:
+    _permission: 'access content'
+
+imprimirform.estado_proceso:
+  path: '/estado-proceso'
+  defaults:
+    _controller: '\Drupal\imprimirform\Controller\EstadoProcesoController::content'
+    _title: 'Estado del Proceso'
+  requirements:
+    _permission: 'access content'

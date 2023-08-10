@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function subir_documento_theme($existing, $type, $theme, $path) {
+  return [
+    'subir_documento_form' => [
+      'template' => 'subir-documento',
+      'variables' => ['form' => NULL],
+    ],
+  ];
+}

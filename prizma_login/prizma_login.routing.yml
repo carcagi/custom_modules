@@ -1,0 +1,7 @@
+prizma_login.combined_login:
+  path: '/prizma/iniciar_sesion'
+  defaults:
+    _form: '\Drupal\prizma_login\Form\CombinedLoginForm'
+    _title: 'Login or Reset Password'
+  requirements:
+    _user_is_logged_in: 'FALSE'

@@ -1,0 +1,6 @@
+name: Form link
+description: Un módulo personalizado para agregar un enlace en la página de perfil del usuario basado en su rol.
+package: Custom
+type: module
+version: 1.0
+core_version_requirement: ^10

@@ -1,0 +1,27 @@
+.prizma-combined-login-form, .centered_prizma_login, .my-custom-password-reset-class{
+    width:600px;
+    display:block;
+    padding-top:3%;
+    margin:0 auto;
+
+}
+
+.custom-login, .custom-password {
+    width:400px;
+    max-width:400px;
+    margin:0 auto;
+    display: block;
+}
+
+#boton-custom-login, #boton-custom-password  {
+    margin: 0 auto;
+    width: 400px;
+    display: block;
+}
+
+.login-h2{
+    margin: 0 auto;
+    width: 400px;
+    display: block;
+    text-align: center;
+}

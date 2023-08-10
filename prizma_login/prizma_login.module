@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Contains prizma_login.module.
+ */
+ /**
+  * Implements hook_theme().
+  */
+ function prizma_login_theme($existing, $type, $theme, $path) {
+   return [
+     'prizma_combined_login' => [
+       'variables' => ['login' => NULL, 'separator' => NULL, 'reset_password' => NULL],
+       'template' => 'prizma-combined-login-form',
+       'path' => $path . '/templates',
+     ],
+   ];
+ }
+
+/**
+ * Implements hook_form_alter().
+ */
+function prizma_login_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+    //\Drupal::messenger()->addMessage($form_id);
+    if ($form_id == 'user_login_form' || $form_id == 'user_pass') {
+        $form['#attached']['library'][] = 'prizma_login/prizma_login_styles';
+    }
+}

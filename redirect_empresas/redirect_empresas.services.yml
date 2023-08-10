@@ -1,0 +1,6 @@
+services:
+  redirect_empresas.form_submission_listener:
+    class: Drupal\redirect_empresas\EventSubscriber\FormSubmissionListener
+    arguments: ['@entity_type.manager', '@plugin.manager.mail']
+    tags:
+      - { name: event_subscriber }

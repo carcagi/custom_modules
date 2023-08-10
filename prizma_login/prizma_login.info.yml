@@ -1,0 +1,5 @@
+name: 'Prizma Login'
+type: module
+description: 'Provides custom login and password reset pages.'
+core_version_requirement: ^10
+package: Custom

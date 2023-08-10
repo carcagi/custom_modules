@@ -1,0 +1,13 @@
+<div class="estado_del_proceso">
+    <h1>Estado del proceso.</h1>
+{% if datos.form_submitted %}
+  <p>{{ 'Ya tienes un proceso iniciado.' }}</p>
+  <p><a href="{{ datos.url }}">Edita el contenido</a>.</p>
+  <p><a href="{{ datos.prev_url }}">Previsuzalizar e Imprimir</a>.</p>
+  <p><a href="{{ datos.subir_link }}">Subir Documento Firmado</a>.</p>
+{% else %}
+  <p>{{ 'Aún no has iniciado el proceso.' }}</p>
+  <p><a href="{{ datos.url }}">Completa el formulario de ingreso</a>.</p>
+{% endif %}
+    <p><a href="/user/logout">Cerrar Sesion</a></p>
+</div>

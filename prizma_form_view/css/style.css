@@ -1,0 +1,132 @@
+.subir-documento-wrapper{
+    max-width:1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display:block;
+}
+
+.sede-alterna-2, .sede-alterna-3{
+  display: none;
+}
+
+.accionista-2,
+.accionista-3,
+.accionista-4,
+.accionista-5,
+.accionista-6,
+.accionista-7,
+.accionista-8,
+.accionista-9,
+.accionista-10{
+  display: none;
+}
+
+.junta_block_2, .junta_block_3, .junta_block_4, .junta_block_5, .junta_block_6,
+.junta_block_7, .junta_block_8, .junta_block_9, .junta_block_10{
+  display: none;
+}
+
+.agregar-mas-sedes, .remove-sede-alterna-button, .agregar-mas-accionistas, .remove-accionista-button, .remove-junta-button, .agregar-mas-miembros{
+    display: inline-block;
+    margin: var(--space-m) var(--space-s) var(--space-m) 0;
+    padding: calc(var(--space-m) - 1px) calc(var(--space-l) - 1px);
+    cursor: pointer;
+    text-align: center;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    color: var(--button-fg-color);
+    border-radius: var(--button-border-radius-size);
+    background-color: var(--button-bg-color);
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    line-height: 1rem;
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+.agregar-mas-sedes:hover, .remove-sede-alterna-button:hover,
+.agregar-mas-accionistas:hover,  .remove-accionista-button:hover,
+.remove-junta-button:hover, .agregar-mas-miembros>:hover{
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    background-color: var(--button--hover-bg-color);
+}
+
+/* Styles to change form progress bar behaviour and orientation */
+
+.js-form-wrapper, .form-wrapper{
+    width:65%;
+    margin-left:4%;
+    display: inline-block; /*Some changes*/
+}
+
+.webform-progress{
+    width: 30%;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    position: sticky;
+    top: 0;
+}
+.webform-progress-tracker .progress-marker::after {
+    display: none;
+    padding-botom: 2px;
+    text-align: left;
+}
+
+.progress-tracker{
+    flex-direction: column;
+}
+
+.progress-title{
+    text-transform: lowercase;
+    margin-bottom: 10px !important;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    display: none;
+}
+
+.progress-title::first-letter {
+    text-transform: uppercase;
+}
+
+.progress-step{
+    margin-top: 10px;
+    text-align: left;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+
+.progress-marker{
+  display:inline-block
+}
+
+.tracker-text-class{
+    display: inline;
+    color: black;
+}
+
+.fieldset {
+    width:100%;
+}
+
+.form-actions{
+    justify-content: flex-end;
+}
+
+/* CSS del Spinner */
+
+.spinner {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

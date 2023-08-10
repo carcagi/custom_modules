@@ -1,0 +1,7 @@
+subir_documento.form:
+  path: '/subir-documento'
+  defaults:
+    _controller: '\Drupal\subir_documento\Controller\SubirDocumentoController::viewForm'
+    _title: 'Subir Documento Firmado'
+  requirements:
+    _permission: 'access content'

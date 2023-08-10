@@ -1,0 +1,9 @@
+name: 'Prizma Form'
+type: module
+description: 'Módulo mostrar el formulario de empresas.'
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - drupal:webform
+version: '1.0'
+project: 'prizma_form_view'

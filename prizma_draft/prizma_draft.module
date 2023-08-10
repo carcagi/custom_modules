@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Contains prizma_draft.module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_alter().
+ */
+function prizma_draft_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'formulario-de-vinculacion-person') {
+    $form['actions']['draft']['#value'] = t('Guardar Borrador');
+  }
+}

@@ -1,0 +1,4 @@
+imprimirform_styles:
+  css:
+    theme:
+      css/imprimirform.css: {}

@@ -1,0 +1,4 @@
+prizma_login_styles:
+  css:
+    theme:
+      css/prizma_login.css: {}
